@@ -12,6 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Oswald:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -139,7 +146,7 @@
           <list class="pricing__list list">
             <ul class="pricing__item">
               <svg class="pricing__svg" width="112" height="132">
-                <use href="./images/icon/sprite.svg#icon-award"></use>
+                <use href="./images/icon/sprite.svg#icon-fire"></use>
               </svg>
               <h3 class="pricing__card-title">Basic</h3>
               <p class="pricing__card-text">
@@ -149,7 +156,7 @@
             </ul>
             <ul class="pricing__item">
               <svg class="pricing__svg" width="112" height="132">
-                <use href="./images/icon/sprite.svg#icon-award"></use>
+                <use href="./images/icon/sprite.svg#icon-fire"></use>
               </svg>
               <h3 class="pricing__card-title">Professional</h3>
               <p class="pricing__card-text">
@@ -159,7 +166,7 @@
             </ul>
             <ul class="pricing__item">
               <svg class="pricing__svg" width="112" height="132">
-                <use href="./images/icon/sprite.svg#icon-award"></use>
+                <use href="./images/icon/sprite.svg#icon-fire"></use>
               </svg>
               <h3 class="pricing__card-title">Ultimate</h3>
               <p class="pricing__card-text">
@@ -170,9 +177,197 @@
           </list>
         </div>
       </section>
+      <!-- ADVANTAGES -->
+      <section class="advantages">
+        <div class="advantages__container">
+          <h2 class="advantages__title">Our advantages</h2>
+          <list class="advantages__list list">
+            <ul class="advantages__item">
+              <picture class="advantages__img">
+                <source
+                  srcset="./images/advantages/img-1@1x.jpg 1x, ./images/advantages/img-1@2x.jpg 2x"
+                />
+                <img src="./images/advantages/img-1@1x.jpg" alt="Boy is dancing" width="719px" />
+              </picture>
+              <div class="advantages__card">
+                <h3 class="advantages__subtitle">AMAZING DANCE</h3>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio
+                  vitae vestibulum vestibulum.
+                </p>
+                <button class="advantages__btn btn" type="btn">read more</button>
+              </div>
+            </ul>
+            <ul class="advantages__item advantages__item--right-img">
+              <div class="advantages__card">
+                <h3 class="advantages__subtitle">AMAZING DANCE</h3>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio
+                  vitae vestibulum vestibulum.
+                </p>
+                <button class="advantages__btn btn" type="btn">read more</button>
+              </div>
+              <picture class="advantages__img">
+                <source
+                  srcset="./images/advantages/img-2@1x.jpg 1x, ./images/advantages/img-2@2x.jpg 2x"
+                />
+                <img src="./images/advantages/img-2@1x.jpg" alt="Boy is dancing" width="719px" />
+              </picture>
+            </ul>
+          </list>
+        </div>
+      </section>
+      <!-- STATISTICS -->
+      <section class="statistics">
+        <div class="statistics__container">
+          <h2 class="statistics__title">Our Statistics</h2>
+          <p class="statistics__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+            vestibulum vestibulum.
+          </p>
+          <list class="statistics__list list">
+            <ul class="statistics__item">
+              <p class="statistics__number">1240+</p>
+              <p class="statistics__name">Club</p>
+            </ul>
+            <ul class="statistics__item">
+              <p class="statistics__number">2000+</p>
+              <p class="statistics__name">Active Member</p>
+            </ul>
+            <ul class="statistics__item">
+              <p class="statistics__number">1.000+</p>
+              <p class="statistics__name">Community</p>
+            </ul>
+          </list>
+        </div>
+      </section>
+      <!-- PERSON -->
+      <section class="person">
+        <div class="person__container">
+          <p class="person__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+            vestibulum vestibulum.
+          </p>
+          <h2 class="person__title">Herbert Simon</h2>
+        </div>
+      </section>
+      <!-- SUBSCRIBE -->
+      <section class="subscribe">
+        <div class="subscribe__container">
+          <h2 class="subscribe__title">SUBSCRIBE</h2>
+          <p class="subscribe__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+            vestibulum vestibulum.
+          </p>
+          <form class="subscribe__form" name="subscribe__form">
+            <div class="subscribe__group">
+              <label class="subscribe__label">
+                <input
+                  class="subscribe__field"
+                  type="email"
+                  name="subscribe__form"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="btn subscribe__btn" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <!-- Підвал сторінки -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left-group">
+          <list class="footer__list list">
+            <ul class="footer__item">
+              <h3 class="footer__title">Musicology</h3>
+            </ul>
+            <ul class="footer__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id
+              maximus ex. Etiam nec dignissim elit, at dignissim enim.
+            </ul>
+          </list>
+          <list class="footer__socials socials list">
+            <ul class="socials__item">
+              <svg class="socials__link" width="44px" height="44px">
+                <use href="./images/icon/sprite.svg#icon-instagram"></use>
+              </svg>
+            </ul>
+            <ul class="socials__item">
+              <svg class="socials__link" width="44px" height="44px">
+                <use href="./images/icon/sprite.svg#icon-facebook"></use>
+              </svg>
+            </ul>
+            <ul class="socials__item">
+              <svg class="socials__link" width="44px" height="44px">
+                <use href="./images/icon/sprite.svg#icon-twitter"></use>
+              </svg>
+            </ul>
+            <ul class="socials__item">
+              <svg class="socials__link" width="44px" height="44px">
+                <use href="./images/icon/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </ul>
+          </list>
+        </div>
+        <list class="footer__list list">
+          <ul class="footer__item">
+            <h3 class="footer__title">About</h3>
+          </ul>
+          <ul class="footer__item">
+            History
+          </ul>
+          <ul class="footer__item">
+            Our Team
+          </ul>
+          <ul class="footer__item">
+            Brand Guidelines
+          </ul>
+          <ul class="footer__item">
+            Terms & Condition
+          </ul>
+          <ul class="footer__item">
+            Privacy Policy
+          </ul>
+        </list>
+        <list class="footer__list list">
+          <ul class="footer__item">
+            <h3 class="footer__title">Services</h3>
+          </ul>
+          <ul class="footer__item">
+            How to Order
+          </ul>
+          <ul class="footer__item">
+            Our Product
+          </ul>
+          <ul class="footer__item">
+            Order Status
+          </ul>
+          <ul class="footer__item">
+            Promo
+          </ul>
+          <ul class="footer__item">
+            Payment Method
+          </ul>
+        </list>
+        <list class="footer__list list">
+          <ul class="footer__item">
+            <h3 class="footer__title">Other</h3>
+          </ul>
+          <ul class="footer__item">
+            Contact Us
+          </ul>
+          <ul class="footer__item">
+            Help
+          </ul>
+          <ul class="footer__item">
+            Privacy
+          </ul>
+        </list>
+      </div>
+    </footer>
 
     <!-- 
 		==================

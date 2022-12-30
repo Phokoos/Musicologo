@@ -1,0 +1,33 @@
+.header {
+	height: 103px;
+}
+.header__container {
+	@extend %container;
+	max-width: 1440px;
+
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	margin-right: 262px;
+}
+
+.header__list {
+	display: flex;
+	align-items: center;
+	gap: 55px;
+}
+
+.header__item {
+	font-family: Oswald;
+	font-size: 25px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.header__find {
+	margin-left: auto;
+
+	fill: currentColor;
+}

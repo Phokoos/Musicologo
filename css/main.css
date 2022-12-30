@@ -10,8 +10,35 @@
   clip: rect(0 0 0 0);
 }
 
+.hero__container, .header__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.hero__btn {
+  width: 322px;
+  height: 65px;
+  border-radius: 4px;
+  background-color: #e8631c;
+  color: #ffffff;
+  font-family: Oswald;
+  font-size: 29px;
+  text-transform: uppercase;
+}
+
 body {
   background-color: #303030;
+  font-family: "Montserrat", "Nunito", "Oswald", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
 }
 
 /* 
@@ -40,6 +67,55 @@ img {
   margin: 0;
   padding: 0;
 }
+.list > ul {
+  padding-left: 0;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  border: 0px;
+}
+
+.header {
+  height: 103px;
+}
+
+.header__container {
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 262px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 55px;
+}
+
+.header__item {
+  font-family: Oswald;
+  font-size: 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header__find {
+  margin-left: auto;
+  fill: currentColor;
+}
 
 /* 
 ===================
@@ -50,4 +126,34 @@ img {
 ==============
 Стилі для герой 
 ==============
-*//*# sourceMappingURL=main.css.map */
+*/
+.hero {
+  text-align: left;
+  height: 796px;
+  background-image: url(../images/hero/img-1@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero/img-1@2x.jpg");
+  }
+}
+
+.hero__container {
+  padding-top: 268px;
+}
+
+.hero__title {
+  margin-bottom: 37px;
+  font-family: Oswald;
+  font-size: 125px;
+  text-align: left;
+}
+
+.hero__text {
+  margin-bottom: 44px;
+  width: 700px;
+  text-align: left;
+}/*# sourceMappingURL=main.css.map */
