@@ -1,0 +1,68 @@
+.dance-tour {
+	padding-top: 105px;
+	padding-bottom: 100px;
+
+	background-color: $accent-color;
+
+	background-image: url(../images/dance-tour/dots@1x.png);
+	@media (min-device-pixel-ratio:2),
+		(min-resolution: 192dpi), 
+		(min-resolution: 2dppx) {
+			background-image: url("../images/dance-tour/dots@2x.png");
+	}
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left -530px top -400px;
+}
+.dance-tour__container {
+	@extend %container;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.dance-tour__title {
+	margin-bottom: 59px;
+
+	font-family: Oswald;
+	font-size: 75px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.dance-tour__text {
+	margin-bottom: 83px;
+}
+
+.dance-tour__list {
+	display: flex;
+	gap: 64px;
+}
+
+.dance-tour__item {
+	margin: 0;
+	width: calc((100% - 2 * 64px/3));
+}
+
+.dance-tour__img {
+}
+
+.dance-tour__desc {
+	padding-top: 37px;
+	padding-bottom: 32px;
+	width: 372px;
+	background-color: $secondary-color;
+}
+
+.dance-tour__desc-title {
+	margin-bottom: 19px;
+
+	font-family: Oswald;
+	font-size: 37px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.dance-tour__desc-text {
+	font-size: 22px;
+}
+
