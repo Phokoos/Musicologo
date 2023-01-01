@@ -1,0 +1,74 @@
+.pricing {
+	padding-top: 108px;
+	padding-bottom: 100px;
+
+	background-image: url(../images/pricing/dots@1x.png) , url(../images/pricing/dots-2@1x.png);
+	@media (min-device-pixel-ratio:2),
+		(min-resolution: 192dpi), 
+		(min-resolution: 2dppx) {
+			background-image: url("../images/pricing/dots@2x.png") , url(../images/pricing/dots-2@2x.png);
+	}
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left -730px top -500px , right -200px top 300px;
+}
+.pricing__container {
+	@extend %container;
+}
+
+.pricing__title {
+	margin-bottom: 59px;
+
+	font-family: Oswald;
+	font-size: 75px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: normal;
+}
+
+.pricing__text {
+	margin-bottom: 85px;
+}
+
+.pricing__list {
+	display: flex;
+	gap: 59px;
+
+	& > ul{
+		padding: 64px 25px 27px 25px;
+	}
+}
+
+.pricing__item {
+	width: calc((100% - 2 * 59px/3));
+	margin: 0;
+
+	background-color: $accent-color;
+	border-radius: 8px;
+}
+
+.pricing__svg {
+	margin-bottom: 59px;
+
+	fill: currentColor;
+}
+
+.pricing__card-title {
+	margin-bottom: 35px;
+
+	font-family: "Oswald";
+	font-size: 37px;
+	text-transform: uppercase;
+}
+
+.pricing__card-text {
+	margin-bottom: 30px;
+
+	font-size: 22px;
+}
+
+.pricing__btn {
+	@extend %btn;
+	background-color: $secondary-color;
+}

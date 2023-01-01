@@ -3,3 +3,71 @@
 Підвал
 ===================
  */
+
+.footer {
+	padding-top: 120px;
+	padding-bottom: 89px; 
+}
+.footer__container {
+	@extend %container;
+	padding-left: 58px;
+	right: 54px;
+
+	display: flex;
+}
+
+.footer__left-group {
+	margin-right: 177px;
+	max-width: 482px;
+}
+
+.footer__list {
+}
+
+.footer__item {
+	margin-bottom: 15px;
+	margin-top: 0;
+
+	font-size: 25px;
+	text-align: left;
+}
+
+.footer__services,
+.footer__about{
+	margin-right: 45px;
+}
+
+.footer__title {
+	margin-right: 39px;
+
+	font-family: Oswald;
+	font-size: 33px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.footer__socials {
+	
+}
+.socials {
+	display: flex;
+	gap: 17px;
+}
+
+.socials__item {
+	width: 68px;
+	height: 68px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50%;
+
+	background-color: $text-color;
+	color: $secondary-color;
+}
+
+.socials__link {
+	fill: currentColor;
+}

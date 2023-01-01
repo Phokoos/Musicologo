@@ -1,0 +1,41 @@
+.statistics {
+	padding-top: 207px;
+	padding-bottom: 270px;
+}
+.statistics__container {
+	@extend %container;
+}
+
+.statistics__title {
+	margin-bottom: 59px;
+
+	font-family: Oswald;
+	font-size: 75px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.statistics__text {
+	margin-bottom: 194px;
+}
+
+.statistics__list {
+	display: flex;
+	justify-content: space-around;
+}
+
+.statistics__item {
+}
+
+.statistics__number {
+	margin-bottom: 35px;
+
+	font-family: Oswald;
+	font-size: 67px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.statistics__name {
+	font-size: 42px;
+}

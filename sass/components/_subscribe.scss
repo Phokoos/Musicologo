@@ -1,0 +1,69 @@
+.subscribe {
+	padding-top: 131px;
+	padding-bottom: 161px;
+
+	background-color: $accent-color;
+
+		background-image: url(../images/subscribe/dots@1x.png) , url(../images/subscribe/dots-2@1x.png);
+	@media (min-device-pixel-ratio:2),
+		(min-resolution: 192dpi), 
+		(min-resolution: 2dppx) {
+			background-image: url("../images/subscribe/dots@2x.png") , url(../images/subscribe/dots-2@2x.png);
+	}
+	background-repeat: no-repeat;
+	// background-size: ;
+	background-position: left -400px center , right -400px center;
+}
+
+.subscribe__container {
+	@extend %container;
+}
+
+.subscribe__title {
+	margin-bottom: 59px;
+
+	font-family: Oswald;
+	font-size: 75px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.subscribe__text {
+	margin-bottom: 56px;
+}
+
+.subscribe__form {
+	
+}
+
+.subscribe__group {
+	display: flex;
+	justify-content: center;
+	gap: 0;
+}
+
+.subscribe__label {
+}
+
+.subscribe__field {
+	width: 549px;
+	height: 63px;
+	background-color: $text-color;
+	border: none;
+	padding: 0;
+	padding-left: 29px;
+
+	&::placeholder{
+		opacity: 0.5;
+		color: #000000;
+		font-size: 25px;
+	}
+}
+
+.subscribe__btn {
+	@extend %btn;
+	background-color: $secondary-color;
+	width: 222px;
+	height: 65px;
+	border-radius: 0 4px 4px 0;
+}
