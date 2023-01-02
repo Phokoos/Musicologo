@@ -29,6 +29,35 @@
   text-transform: uppercase;
 }
 
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.065);
+            transform: scale(1.065);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  70% {
+    -webkit-transform: scale(1.065);
+            transform: scale(1.065);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
 body {
   background-color: #303030;
   font-family: "Montserrat", "Nunito", "Oswald", sans-serif;
@@ -101,10 +130,28 @@ img {
 }
 
 .header__item {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: Oswald;
   font-size: 25px;
   text-align: left;
   text-transform: uppercase;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+          transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+}
+.header__item:focus, .header__item:hover {
+  color: #e8631c;
 }
 
 .header__find {
@@ -133,6 +180,15 @@ img {
 .footer__left-group {
   margin-right: 177px;
   max-width: 482px;
+}
+.footer__left-group:focus, .footer__left-group:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
+
+.footer__list:focus, .footer__list:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
 }
 
 .footer__item {
@@ -177,6 +233,16 @@ img {
   border-radius: 50%;
   background-color: #ffffff;
   color: #303030;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+          transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+}
+.socials__item:focus, .socials__item:hover {
+  color: #ffffff;
+  background-color: #303030;
 }
 
 .socials__link {
@@ -218,6 +284,23 @@ img {
   width: 700px;
   text-align: left;
 }
+.hero__text:focus, .hero__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
+
+.hero__btn {
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+          transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+}
+.hero__btn:focus, .hero__btn:hover {
+  color: #e8631c;
+  background-color: #303030;
+}
 
 .dance-tour {
   padding-top: 105px;
@@ -250,6 +333,10 @@ img {
 .dance-tour__text {
   margin-bottom: 83px;
 }
+.dance-tour__text:focus, .dance-tour__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
 
 .dance-tour__list {
   display: -webkit-box;
@@ -261,6 +348,10 @@ img {
 .dance-tour__item {
   margin: 0;
   width: calc(100% - 42.6666666667px);
+}
+.dance-tour__item:focus, .dance-tour__item:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
 }
 
 .dance-tour__desc {
@@ -309,6 +400,10 @@ img {
 .pricing__text {
   margin-bottom: 85px;
 }
+.pricing__text:focus, .pricing__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
 
 .pricing__list {
   display: -webkit-box;
@@ -325,6 +420,10 @@ img {
   margin: 0;
   background-color: #e8631c;
   border-radius: 8px;
+}
+.pricing__item:focus, .pricing__item:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
 }
 
 .pricing__svg {
@@ -346,6 +445,16 @@ img {
 
 .pricing__btn {
   background-color: #303030;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+          transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+}
+.pricing__btn:focus, .pricing__btn:hover {
+  color: #e8631c;
+  background-color: #ffffff;
 }
 
 .advantages {
@@ -398,9 +507,23 @@ img {
   font-size: 25px;
   text-align: left;
 }
+.advantages__text:focus, .advantages__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
 
 .advantages__btn {
   background-color: #303030;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+          transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+}
+.advantages__btn:focus, .advantages__btn:hover {
+  color: #e8631c;
+  background-color: #ffffff;
 }
 
 .statistics {
@@ -419,6 +542,10 @@ img {
 .statistics__text {
   margin-bottom: 194px;
 }
+.statistics__text:focus, .statistics__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
 
 .statistics__list {
   display: -webkit-box;
@@ -426,6 +553,11 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.statistics__item:focus, .statistics__item:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
 }
 
 .statistics__number {
@@ -461,6 +593,10 @@ img {
   margin-bottom: 77px;
   font-size: 50px;
 }
+.person__text:focus, .person__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+}
 
 .person__title {
   font-family: Oswald;
@@ -493,6 +629,10 @@ img {
 
 .subscribe__text {
   margin-bottom: 56px;
+}
+.subscribe__text:focus, .subscribe__text:hover {
+  -webkit-animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
+          animation: scale 250ms cubic-bezier(0.67, 0.19, 0.95, 0.61) forwards;
 }
 
 .subscribe__group {
@@ -544,4 +684,15 @@ img {
   width: 222px;
   height: 65px;
   border-radius: 0 4px 4px 0;
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+          transition-timing-function: cubic-bezier(0.67, 0.19, 0.95, 0.61);
+}
+.subscribe__btn:focus, .subscribe__btn:hover {
+  color: #e8631c;
+  background-color: #ffffff;
+  border: 2px #303030 solid;
 }/*# sourceMappingURL=main.css.map */

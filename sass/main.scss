@@ -2,6 +2,8 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/placeholders.scss';
+@import './utils/mixins';
+@import './utils/animations';
 
 // base styles
 @import './base/base';
@@ -9,7 +11,6 @@
 
 // components styles
 @import './components/header';
-@import './components/btn';
 @import './components/footer';
 @import './components/hero';
 @import './components/dance-tour';

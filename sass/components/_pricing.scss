@@ -29,6 +29,8 @@
 
 .pricing__text {
 	margin-bottom: 85px;
+
+	@include scale;
 }
 
 .pricing__list {
@@ -46,6 +48,8 @@
 
 	background-color: $accent-color;
 	border-radius: 8px;
+
+	@include scale;
 }
 
 .pricing__svg {
@@ -71,4 +75,12 @@
 .pricing__btn {
 	@extend %btn;
 	background-color: $secondary-color;
+
+	@include transition(color, background-color);
+
+	&:focus,
+	&:hover{
+		color: $accent-color;
+		background-color: $text-color;
+	}
 }

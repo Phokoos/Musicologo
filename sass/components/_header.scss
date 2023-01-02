@@ -16,10 +16,24 @@
 }
 
 .header__item {
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 103px;
+
+	display: flex;
+	align-items: center;
+
 	font-family: Oswald;
 	font-size: 25px;
 	text-align: left;
 	text-transform: uppercase;
+
+	@include transition(color);
+
+	&:focus,
+	&:hover{
+		color: $accent-color;
+	}
 }
 
 .header__find {

@@ -1,0 +1,12 @@
+@mixin transition($property...){
+	transition-property: $property;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(.67,.19,.95,.61);
+}
+
+@mixin scale(){
+	&:focus,
+	&:hover{
+		animation: scale 250ms cubic-bezier(.67,.19,.95,.61) forwards;
+}
+}

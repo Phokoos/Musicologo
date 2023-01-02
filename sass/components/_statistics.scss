@@ -17,6 +17,8 @@
 
 .statistics__text {
 	margin-bottom: 194px;
+
+	@include scale;
 }
 
 .statistics__list {
@@ -25,6 +27,7 @@
 }
 
 .statistics__item {
+	@include scale;
 }
 
 .statistics__number {

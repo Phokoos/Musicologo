@@ -54,11 +54,21 @@
 
 	font-size: 25px;
 	text-align: left;
+
+	@include scale;
 }
 
 .advantages__btn {
 	@extend %btn;
 	background-color: $secondary-color;
+
+	@include transition(color, background-color);
+
+	&:focus,
+	&:hover{
+		color: $accent-color;
+		background-color: $text-color;
+	}
 }
 
 .advantages__item--right-img {

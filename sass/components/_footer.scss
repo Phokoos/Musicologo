@@ -19,9 +19,12 @@
 .footer__left-group {
 	margin-right: 177px;
 	max-width: 482px;
+
+	@include scale;
 }
 
 .footer__list {
+	@include scale;
 }
 
 .footer__item {
@@ -66,6 +69,14 @@
 
 	background-color: $text-color;
 	color: $secondary-color;
+
+	@include transition(color, background-color);
+
+	&:focus,
+	&:hover{
+		color: $text-color;
+		background-color: $secondary-color;
+	}
 }
 
 .socials__link {

@@ -30,6 +30,8 @@
 
 .subscribe__text {
 	margin-bottom: 56px;
+
+	@include scale;
 }
 
 .subscribe__form {
@@ -66,4 +68,14 @@
 	width: 222px;
 	height: 65px;
 	border-radius: 0 4px 4px 0;
+
+	@include transition(color, background-color, border-color);
+
+	&:focus,
+	&:hover{
+		color: $accent-color;
+		background-color: $text-color;
+
+		border: 2px $secondary-color solid;
+	}
 }

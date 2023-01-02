@@ -31,6 +31,9 @@
 
 .dance-tour__text {
 	margin-bottom: 83px;
+
+	@include scale;
+
 }
 
 .dance-tour__list {
@@ -41,6 +44,8 @@
 .dance-tour__item {
 	margin: 0;
 	width: calc((100% - 2 * 64px/3));
+
+	@include scale;
 }
 
 .dance-tour__img {

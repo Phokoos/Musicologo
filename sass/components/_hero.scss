@@ -36,8 +36,19 @@
 
 	width: 700px;
 	text-align: left;
+
+	@include scale;
+
 }
 
 .hero__btn {
 	@extend %btn;	
+
+	@include transition(color, background-color);
+
+	&:focus,
+	&:hover{
+		color: $accent-color;
+		background-color: $secondary-color;
+	}
 }
